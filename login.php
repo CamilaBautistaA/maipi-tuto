@@ -11,10 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // ---- Conexión ----
-$host       = "localhost";
-$usuario    = "root";
-$password   = "";            // vacío si tu MySQL no tiene contraseña
-$base_datos = "universidad";
+$host       = "sql211.infinityfree.com";
+$usuario    = "if0_43256743";
+$password   = "67YpiGZF2JZfRtm";
+$base_datos = "if0_43256743_maipi_db";
 
 $conexion = new mysqli($host, $usuario, $password, $base_datos);
 if ($conexion->connect_error) {

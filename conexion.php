@@ -13,7 +13,8 @@ const UNIDADES    = ['PC1', 'PC2', 'Parcial', 'Final'];
 const TABLA_MATRICULAS = 'sheet3';          // la que tiene: id_matricula, matricula, id_curso, semestre
 const TABLA_CURSOS     = 'sheet2';              // la que tiene: id_curso, codigo_curso, nombre_curso, carrera, ciclo
 
-$conexion = new mysqli('localhost', 'root', '', 'universidad');
+#$conexion = new mysqli('localhost', 'root', '', 'universidad');
+$conexion = new mysqli('sql211.infinityfree.com', 'if0_43256743', '67YpiGZF2JZfRtm', 'if0_43256743_maipi_db');
 $conexion->set_charset('utf8mb4');
 
 function e($v) { return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }

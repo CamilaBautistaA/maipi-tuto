@@ -12,7 +12,8 @@ if (empty($_SESSION['email'])) { header('Location: index.html'); exit; }
 if (isset($_GET['salir'])) { session_destroy(); header('Location: index.html'); exit; }
 
 // ---- CONEXIÓN (igual que en login.php) ----
-$conexion = new mysqli("localhost", "root", "", "universidad");
+// ---- CONEXIÓN ----
+$conexion = new mysqli("sql211.infinityfree.com", "if0_43256743", "67YpiGZF2JZfRtm", "if0_43256743_maipi_db");
 if ($conexion->connect_error) { die("Error de conexión: " . $conexion->connect_error); }
 $conexion->set_charset("utf8mb4");
 
